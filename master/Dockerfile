@@ -51,6 +51,7 @@ RUN set -eux; \
 		zstd \
 	; \
 	rm -rf /var/lib/apt/lists/*
+	
 
 RUN set -eux; \
 # gpg: key 3A79BD29: public key "MySQL Release Engineering <mysql-build@oss.oracle.com>" imported
