@@ -59,6 +59,7 @@ _datadir() {
 }
 
 # allow the container to be started with `--user`
+
 if [ "$1" = 'mysqld' -a -z "$wantHelp" -a "$(id -u)" = '0' ]; then
 	_check_config "$@"
 	DATADIR="$(_datadir "$@")"
